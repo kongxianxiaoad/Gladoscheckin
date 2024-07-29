@@ -41,9 +41,11 @@ if __name__ == '__main__':
             result = checkin.json()     
             # 获取签到结果
             status = result.get('message')
+            print(status)
 
             # 获取账号当前状态
             result = state.json()
+            print(result)
             # 获取剩余时间
             leftdays = int(float(result['data']['leftDays']))
             # 获取账号email
